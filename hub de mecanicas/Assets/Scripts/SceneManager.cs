@@ -1,18 +1,23 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManager;
 
 public class SceneManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    #region variables
+    [Header("variables")]
 
-    // Update is called once per frame
-    void Update()
+    [SerializeField] string moveScene;
+    [SerializeField] string jumpScene;
+#endregion
+
+#region LoadScenes
+    public void MoveSceneLoad() 
     {
-        
+        SceneManager.LoadScene(moveScene);
     }
+    public void JumpSceneLoad() 
+    {
+        SceneManager.LoadScene(jumpScene);
+    }
+ #endregion   
 }
