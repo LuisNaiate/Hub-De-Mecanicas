@@ -1,7 +1,7 @@
 using UnityEngine;
-using UnityEngine.SceneManager;
+using UnityEngine.SceneManagement;
 
-public class SceneManager : MonoBehaviour
+public class SceneManagerr : MonoBehaviour
 {
     #region variables
     [Header("variables")]
